@@ -1,4 +1,4 @@
-//customAlerts 2017
+//CUSTOMALERTS 2017
 //ludwigfriborg
 
 var CUSTOMALERT = {};
@@ -38,7 +38,7 @@ CUSTOMALERT.alert = function (text, buttonText) {
   buttonarea.append(dismissButton);
   nW.frame.append(buttonarea);
 
-  dismissButton.onclick = function () { nW.remove(); console.log('Alert dismissed: ' + text); }
+  dismissButton.onclick = function () { nW.remove(); }
 
   CUSTOMALERT.container.append(nW);
   dismissButton.focus();
@@ -87,7 +87,6 @@ CUSTOMALERT.notice = function (text, timed) {
   nW.frame.className += 'ca_box ca_notice';
 
   if (timed) {
-    //later show timer
     setTimeout(function(){ nW.remove(); }, timed); 
   } else {
     nW.onclick = function () { 
