@@ -1,0 +1,62 @@
+.ca_bg { 
+  position: absolute; 
+  z-index: 1; 
+  top: 0; bottom: 0; left: 0; right: 0; 
+  
+  font-family: arial, sans-serif;
+}
+.ca_bg > .ca_box { 
+  position: absolute; 
+  top: 0; bottom: 0; left: 0; right: 0;
+
+  margin:auto; 
+  max-height: 150px; 
+  max-width: 300px;
+  
+  background: #fff; 
+  box-shadow: 0 0.5rem 1rem -0.5rem rgba(0,0,0,0.5);
+
+  border-radius: 0.5rem;
+  border: solid thin #aaa;
+}
+
+.ca_bg > .ca_box > p{
+  padding: 1rem;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.ca_bg .ca_buttonarea{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  text-align: right;
+}
+
+.ca_bg .ca_button{
+  background: #fff;
+  box-shadow: 0 2px 5px -2px rgba(0,0,0,0.5);
+
+  margin: 1rem;
+  margin-left: 0;
+  padding: 0.5rem 1rem; 
+
+  border-radius: 0.25rem;
+  border: solid thin #999;
+  cursor: pointer;
+}
+
+.ca_bg .ca_button:active{
+  background: #ddd;
+  box-shadow: inset 0 2px 5px -2px rgba(0,0,0,0.5);
+  
+  outline: none;
+}
+
+.ca_bg .ca_button:focus{
+  border-color: #39a;
+  
+  outline: none; 
+}
